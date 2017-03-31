@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicación móvil</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/telefono2.png','imagenes/tel.jpg','imagenes/gb2.jpg','imagenes/gm2.jpg','imagenes/ga2.jpg','imagenes/CelularesF.jpg','imagenes/ara1.jpg','imagenes/telefonia.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h3>Telefonia Celular </h3>
+   </div>
+   <div data-role="main" class="ui-content">
+     </div>
+     <div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>¿Qué es un teléfono celular?</h2>
+          <p>Definicion </p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Historia del teléfono celular</h2>
+           <p> Definicion </p>
+          </a>
+         </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Clasificación de los celulares de acuerdo a su GAMA</h2>
+           <p>Gama baja, media y alta</p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Compañias en México que manejan el servicio de telefonía celular</h2>
+           <p>Telcel, Movistar, Unefon...</p>
+          </a>
+       </li>  
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Teléfonos del futuro</h2>
+           <p>Definicion</p>
+          </a> 
+        </li>
+        </ul>
+       </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+          <img src="imagenes/logo.png" width="46" height="46">
+         </div>
+         <div>
+           <h4>Aplicacion Dos</h4>
+           <h4>Daniela Padilla Cuautle</h4>
+         </div>
+        </div>
+        </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+            <h4>TELEFONO CELULAR</h4>
+          </div>
+         <div data-role="content" align="center">
+          <div>
+            <h4>&nbsp;</h4>
+            <h4><center><img src="imagenes/telefono.gif" width="229" height="123" alt="Tel"></center></h4>
+            <h4>&nbsp;</h4>
+            <p>Un <strong>teléfono celular</strong> es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</p>
+            <p>&nbsp;</p>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/telefono2.png',1)"><center><img src="imagenes/telefono1.jpg" width="168" height="202" id="Image4"></center></a></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            
+               <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELEFONO CELULAR</h1>
+      <div>
+      
+      <br>
+     </div>
+     <div>
+      <img src="imagenes/telefono3.jpg" width="206">
+     </div>
+     </div>
+     </div>
+            
+          </div>
+          </div>
+          <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>Aplicacion Dos, DPC</h4>
+            </div>
+           </div>
+         
+          
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+             <h4>HISTORIA DEL TELEFONO CELULAR </h4>
+            </div>
+            <div data-role="content" align="center">
+             <div>
+               <p>En 1939, solo el 35,5 % de los estadounidenses tenía teléfonos en sus casas. En ese mismo año la exhibición «Futurama» de la Feria Mundial anticipó los teléfonos portátiles inalámbricos.</p>
+               <p>Tres años más tarde los soldados norteamericanos llevaron el antecesor del celular al campo de batalla. La compañía Motorola especializada en la fabricación de radios de doble vía, presenta su transmisor del mismo nombre, que permitía tener comunicadas las tropas en la segunda guerra mundial. Físicamente este aparato era del tamaño de una botella, pesado e incómodo, pero se podía transportar para todos los lados.</p>
+               <p>Al terminar la guerra el monopolio de comunicaciones AT&amp;T, tomó concepto del transmisor de Motorola y lo llevó al automóvil, pero este tenía limitantes, por ejemplo no se podía tener más de 4 conversaciones al mismo instante, además de ser muy costoso y el servicio muy malo. A pesar de estas limitantes había colas de personas para obtener un teléfono para el automóvil.</p>
+               <p>&nbsp;</p>
+               <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/tel.jpg',1)"><center><img src="imagenes/primer.jpg" width="194" height="185" id="Image7"></center></a></p>
+               <p>&nbsp;</p>
+               <h4>&nbsp;</h4>
+               
+                <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>HISTORIA DEL CELULAR</h1>
+      <div>
+      
+      <br>
+     </div>
+     <div>
+      <img src="imagenes/historia.png" width="310" height="176">
+     </div>
+     </div>
+     </div>
+               
+             </div>
+               </div>
+             <div data-role="footer" data-theme="a" data-position="fixed">
+               <h4>Aplicacion Dos, DPC</h4>
+               </div>
+                </div>
+                
+             
+             
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+             <h3>CLASIFICACION DE LOS CELULARES DE ACUERDO A SU GAMA</h3>
+            </div>
+            <div data-role="content" align="center">
+             <div>
+               <p>&nbsp;</p>
+               <p>Desde los más básicos, hasta los terminales estrellas de cada empresa están sujetos a ser clasificados según: ¿que tienen por dentro?, ¿como se ven? y ¿que son capaces de hacer?</p>
+               <p>Para evitar caer en una comparativa exclusiva de precios hay que mirar más en detalle cada dispositivo que nos interesa porque puede ser engañoso en algunas ocasiones.</p>
+               <p>.</p>
+               <h1>Gama baja</h1>
+               <h4>&nbsp;</h4>
+               <h4>&nbsp;</h4>
+               <p>En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/gb2.jpg',1)"><img src="imagenes/gb1.jpg" alt="" width="252" height="198" class="ui-bar-a" id="Image9" align="right"></a></p>
+               <ul>
+                 <li>
+                   <p>Suelen ser pequeños</p>
+                 </li>
+                 <li>
+                   <p align="left">Tienen funciones básicas o las funciones que traen ya no están a la altura de un SmartPhone <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/gb2.jpg',1)">
+                   <left></left></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/gb2.jpg',1)"><right></right>
+                     </a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/gb2.jpg',1)"><aling rigth></aling> 
+                     </a></p>
+                 </li>
+                 <li>
+                   <p>Precios muy economicos</p>
+                 </li>
+                 <li>
+                   <p>Características muy limitadas (cámara VGA, memoria interna, sin flash, se ponen muy lentos con el tiempo)</p>
+                 </li>
+                 <li>
+                   <p>No reciben soporte ni actualizaciones.</p>
+                 </li>
+               </ul>
+               <h1>Gama media</h1>
+               <h4>&nbsp;</h4>
+               <h4 align="left">&nbsp;</h4>
+               <p>Aquí se ubican algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado  y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.</p>
+               <ul>
+                 <li>
+                   <p>Suelen ser muy equilibrados en sus características</p>
+                 </li>
+                 <li>
+                   <p>Generalmente no superan los 500 dólares en precio (como mucho).</p>
+                 </li>
+                 <li>
+                   <p align="right">Tienen algunas funciones de la gama alta del momento.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/gm2.jpg',1)"><img src="imagenes/gm1.jpg" width="207" height="222" id="Image10" align="right"></a></p>
+                 </li>
+                 <li>
+                   <p>Los materiales ya son de calidad aceptable.</p>
+                 </li>
+                 <li>
+                   <p>Pantallas que no superan las 4.5 pulgadas (en promedio).</p>
+                 </li>
+                 <li>
+                   <p>Cámaras de 3 a 5 Mpx</p>
+                 </li>
+                 <li>
+                   <p>Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM</p>
+                 </li>
+               </ul>
+               <p>Teléfonos de gama media:</p>
+               <ul>
+                 <li>
+                   <p>MOTO G4 PLUS</p>
+                 </li>
+                 <li>
+                   <p>LG G5</p>
+                 </li>
+                 <li>
+                   <p>HUAWEI P9</p>
+                 </li>
+               </ul>
+               <h1>Gama alta</h1>
+               <p>Aquí se ubican los mejores smartphones, se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.</p>
+               <p>Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida.</p>
+               <p>También pueden incluirse otros terminales no tan nuevos pero que siguen siendo una excelente opción en gama alta aunque no cumplan con el requisito del precio.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/ga2.jpg',1)"><img src="imagenes/ga1.jpg" width="196" height="228" id="Image11" align="right"></a></p>
+               <ul>
+                 <li>
+                   <p>Pantallas de 4 pulgadas en adelante</p>
+                 </li>
+                 <li>
+                   <p>Memoria interna desde 16GB</p>
+                 </li>
+                 <li>
+                   <p>Soporte de actualizaciones (las recibe antes pero depende de la marca)</p>
+                 </li>
+                 <li>
+                   <p>Diseñados para redes 4G</p>
+                 </li>
+                 <li>
+                   <p>Muchos núcleos, procesadores y RAM para que sean muy rápidos</p>
+                 </li>
+                 <li>
+                   <p>Cámaras de calidad desde 8 Mpx</p>
+                 </li>
+                 <li>
+                   <p>Destacan por ser relativamente delgados</p>
+                 </li>
+                 <li>
+                   <p>Eficiencia energética</p>
+                 </li>
+                 <li>
+                   <p>Se conectan con la TV</p>
+                 </li>
+                 <li>
+                   <p>Desde 800 dólares en adelante</p>
+                 </li>
+               </ul>
+               <p>Algunos smarphones de gama alta son:</p>
+               <ul>
+                 <li>
+                   <p>NOKIA
+                   LUMIA 930</p>
+                 </li>
+                 <li>
+                   <p>SAMSUNG GALAXY S7 EDGE</p>
+                 </li>
+                 <li>
+                   <p>IPHONE 7 PLUS</p>
+                 </li>
+               </ul>
+               <h4>&nbsp;</h4>
+               
+               
+             </div>
+               </div>
+               
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h4><span class="ui-grid-duo">CLASIFICACION POR GAMA </span>      </h4>
+      <div>
+        <center>
+       <img src="imagenes/gama.jpg" width="170" height="142">
+     </center>
+   </div>
+     </div>
+     </div>
+             <div data-role="footer" data-theme="b" data-position="fixed">
+               <h4>Aplicacion Dos, DPC</h4>
+               </div>
+                </div>
+             
+             
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+             <h3>COMPAÑIAS EN MÉXICO QUE MANEJAN EL SERVICIO DE TELEFONIA CELULAR</h3>
+  </div>
+            <div data-role="content" align="center">
+             <div>
+               <h5 align="right">&nbsp;</h5>
+               <p align="right">La Reforma en Telecomunicaciones trajo consigo la posibilidad de que <strong>la competencia en el sector de telefonía móvil despegase con la llegada de losOperadores Móviles Virtuales</strong>. Después de varios meses hemos visto como nuevos operadores se suman a esta iniciativa y otros, como Tuenti, deciden retirarse del mercado Mexicano. <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/telefonia.jpg',1)"><img src="imagenes/telefonia1.jpg" width="243" height="145" id="Image13" align="right"></a></p>
+               <p align="right">Cada OMV en el país <strong>ha preparado sus ofertas comerciales enfocándose a un sector en especifico de la población</strong>, sin embargo, los estudios recientes han mostrado que a pesar de sus grandes ofertas, la población sigue prefiriendo a su operador de siempre y pocas veces cambia de proveedor de servicios. Algunas empresas de telecomunicasiones son:</p>
+               <ul>
+                 <li>
+                   <h4><a href="http://www.telcel.com/">Telcel</a></h4>
+                 </li>
+                 <li>
+                   <h4><a href="http://www.movistar.com.mx/">Movistar</a></h4>
+                 </li>
+                 <li>
+                   <h4><a href="https://web.iusacell.com.mx/PortalAutoservWeb/">IUSACEL</a></h4>
+                 </li>
+                 <li>
+                   <h4><a href="https://www.unefon.com.mx/">UNEFON </a></h4>
+                 </li>
+                 <li>
+                   <h4><a href="https://www.att.com.mx/">AT&T</a></h4>
+                 </li>
+                 <li>
+                   <h4><a href="https://www.att.com.mx/">NEXTEL</a></h4>
+                 </li>
+                 <li>
+                   <h4><a href="http://weex.mx/">Weex</a></h4>
+                 </li>
+               </ul>
+               <p align="right">&nbsp;</p>
+               <p>&nbsp;</p>
+               <p>&nbsp;</p>
+               <h4>&nbsp;</h4>
+               <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h3><center>TELEFONIA CELULAR EN MÉXICO</center></h3>
+      <div>
+      <br>
+     </div>
+     <div>
+     <center> <img src="imagenes/Tele.jpg" width="260" height="152"></center>
+     </div>
+     </div>
+     </div>
+               
+             </div>
+            </div>
+</div>
+                         
+ 
+             
+<div data-role="footer" data-theme="b" data-position="fixed">
+               <h4 class="AS">Aplicacion Dos, DPC</h4>
+               </div>
+               </div>
+               
+               
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+             <h4 class="df">TELEFONOS DEL FUTURO</h4>
+            </div>
+            <div data-role="content" align="center">
+             <div>
+               <p>El cómo será la tecnología en general, y los móviles en particular, es un tema muy recurrido en el que <strong>dejar volar nuestra imaginación</strong> resulta clave para abarcar todas las posibilidades que esconde el futuro. Cada uno tiene su ideal de hacia dónde irá encaminada la tecnología en los próximos tiempos, y la opinión de cualquier persona es tan válida como la de cualquier otro.</p>
+               <h3 itemprop="name">¿Cómo serán los celulares del futuro?               </h3>
+               <p>Pantallas flexibles, transparentes o de papel, teléfonos armables y sistemas que permitan comunicarnos con los demás sin usar las redes telefónicas son cosas que convergerán en un futuro que cada vez se ve menos lejano.</p>
+               <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/CelularesF.jpg',1)"><center></center></a></p>
+               <h4><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/CelularesF.jpg',1)"><img src="imagenes/futuro.jpg" width="214" height="124" id="Image14"></a></h4>
+               <p>Si bien es difícil asegurar cómo serán los celulares en el futuro, podemos darnos una idea de cómo serán con algunos proyectos en los que ya trabajan las empresas y que veremos en un futuro muy cercano.</p>
+               <h3>El Proyecto Ara de Google</h3>
+               <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/ara1.jpg',1)"><center>
+                 <img src="imagenes/ara.jpg" width="177" height="123" id="Image15">
+               </center></a></p>
+               <p>&nbsp;</p>
+               <p>Google tiene la idea de que los teléfonos jamás se queden obsoletos, y que puedan actualizar su software y su hardware sin mayores problemas para estar siempre a la última. Así nació el Proyecto Ara, <strong>que pretende construir teléfonos que, literalmente,</strong> <strong>sean armables con piezas intercambiables según las necesidades de cada usuario.</strong></p>
+               <p>Project Ara va ya en su segundo prototipo de celular funcional, el Spiral 2, construido a base de bloques independientes de cámaras, pantallas, altavoces y microprocesadores fabricados por diferentes empresas. <strong>Será lanzado en Puerto Rico a finales del 2015</strong>, como sitio donde se hará la prueba piloto antes de salir al mercado oficialmente.</p>
+               <h3>Pantallas Flexibles Samsung               </h3>
+               <p><center></center></p>
+               <p><center><center><img src="imagenes/CelularesF.jpg" width="170" height="161" alt="hy"></center></p>
+               <p>Desde la feria tecnológica CES 2013 <strong>Samsung sorprendió al mundo al presentar los prototipos funcionales de un teléfono inteligente con una pantalla completamente flexible.</strong> De hecho, el modelo presentado, con Windows Phone, se guardaba en una caja plástica y de ahí salía desenrollado y listo para ser manipulado.</p>
+               <p>&nbsp;</p>
+             </div>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+          <h4><span class="ui-grid-duo">TELEFONOS DEL FUTURO</span>      </h4>
+      <div>
+        <center>
+       <img src="imagenes/celular del futuro.jpg" width="170" height="142">
+     </center>
+   </div>
+     </div>
+     </div>
+            
+             <div data-role="footer" data-theme="b" data-position="fixed">
+               <h4>Aplicacion Dos, DPC</h4>
+               </div>
+        </div>
+  
+  
+                
+</body>
+</html>
